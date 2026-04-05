@@ -216,6 +216,14 @@ app.get('/health', (req, res) => {
   })
 })
 
+// API health check (for CI/CD)
+app.get('/api/health', (req, res) => {
+  res.json({ 
+    status: 'ok', 
+    timestamp: new Date().toISOString()
+  })
+})
+
 // Socket.IO
 io.use((socket, next) => {
   const token = socket.handshake.auth.token
