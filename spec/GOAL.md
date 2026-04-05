@@ -12,6 +12,7 @@ This repository serves as a testbed for validating agent-generated code, demonst
 - [x] Docker build works and can be pulled on another machine
 - [x] Landing page deployed at https://thatwonguy-agent.github.io/qwen-test
 - [x] Core features working end-to-end
+- [x] User authentication (signup/login/logout) MVP
 - [x] All CI checks passing (validate-spec → build → deploy)
 - [x] No hardcoded secrets
 - [x] Telegram notifications firing on build/PR/issue events
